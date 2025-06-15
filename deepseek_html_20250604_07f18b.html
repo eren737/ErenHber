@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ErenHbaer | Hoş Geldiniz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">ErenHbaer</div>
+        <nav>
+            <a href="#" class="active">Ana Sayfa</a>
+            <a href="#">Hakkımda</a>
+            <a href="#">İletişim</a>
+        </nav>
+        <div class="auth-buttons">
+            <button id="loginBtn">Giriş Yap</button>
+            <button id="registerBtn">Kayıt Ol</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>ErenHbaer'e Hoş Geldiniz!</h1>
+            <p>Kişisel websiteme göz atın ve keşfedin.</p>
+            <button class="cta-button">Keşfet</button>
+        </section>
+    </main>
+
+    <!-- Giriş Yap Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Giriş Yap</h2>
+            <form id="loginForm">
+                <input type="email" placeholder="E-posta" required>
+                <input type="password" placeholder="Şifre" required>
+                <button type="submit">Giriş Yap</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Kayıt Ol Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Kayıt Ol</h2>
+            <form id="registerForm">
+                <input type="text" placeholder="Kullanıcı Adı" required>
+                <input type="email" placeholder="E-posta" required>
+                <input type="password" placeholder="Şifre" required>
+                <button type="submit">Kayıt Ol</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ErenHbaer. Tüm hakları saklıdır.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
